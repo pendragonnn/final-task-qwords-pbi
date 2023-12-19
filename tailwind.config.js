@@ -12,6 +12,11 @@ export default {
     ],
 
     theme: {
+        theme: {
+            minWidth: {
+                '1/2': '50%',
+            },
+        },
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
