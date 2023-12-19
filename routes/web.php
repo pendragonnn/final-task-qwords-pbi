@@ -16,7 +16,7 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
+Route::get('/qwords', function () {
     return Inertia::render('Homepage');
 });
 

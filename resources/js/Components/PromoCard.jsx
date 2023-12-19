@@ -1,20 +1,40 @@
-import { Button, Card } from 'flowbite-react';
+import { Card } from 'flowbite-react';
 
-export default function PromoCard({promoData}) {
+export default function PromoCard({ promoData }) {
   return (
-    <Card className="relative min-w-[50%] text-center">
+    <Card className="text-center">
       <h5 className="text-2xl tracking-tight text-white bg-orange-500 rounded-full p-2 font-bold">
-       { promoData.valueCloudHosting }
+        {promoData.valueCloudHosting}
       </h5>
       <small className='line-through'>Rp. {promoData.price}</small>
       <p className='text-orange-500 text-3xl font-bold'>Rp. {promoData.discountPrice}</p>
-      <div className="grid grid-cols-2 gap-2 w-full text-start mb-5 text-sm">
-        <div className='shadow-sm text-center border rounded p-1'>Disk: <span className='text-orange-500 font-bold'>{promoData.disk}</span></div>
-        <div className='shadow-sm text-center border rounded p-1'>Bandwith: <span className='text-orange-500 font-bold'>{promoData.bandwith}</span></div>
-        <div className='shadow-sm text-center border rounded p-1'>Core CPU: <span className='text-orange-500 font-bold'>{promoData.coreCPU}</span> core</div>
-        <div className='shadow-sm text-center border rounded p-1'>Addon/Parked Domain: <span className='text-orange-500 font-bold'>{promoData.addOn}</span></div>
+      <div className="grid grid-cols-2 gap-2 w-full text-start mb-5 text-sm items-center font-bold">
+        <div className='text-center p-1'>
+          <p className='text-base'>Disk </p>
+          <span className='text-orange-500 text-2xl'>
+            {promoData.disk}
+          </span>
+        </div>
+        <div className='text-center p-1'>
+          <p className='text-base'>Bandwith </p>
+          <span className='text-orange-500 text-2xl'>
+            {promoData.bandwith}
+          </span>
+        </div>
+        <div className='text-center p-1'>
+          <p className='text-base'>Core CPU </p>
+          <span className='text-orange-500 text-2xl'>
+            {promoData.coreCPU} Core
+          </span>
+        </div>
+        <div className='text-center p-1'>
+          <p className='text-base'>Addon/Parked Domain </p>
+          <span className='text-orange-500 text-2xl'>
+            {promoData.addOn}
+          </span>
+        </div>
       </div>
-      <button className=' bg-orange-500 p-2 rounded-lg flex items-center justify-center text-white hover:bg-white hover:text-orange-500 hover:border hover:border-orange-500'>
+      <button className=' bg-orange-500 p-2 rounded-lg flex items-center justify-center text-white hover:bg-white hover:text-orange-500 hover:border hover:border-orange-500 hover:p-2'>
         Pesan Sekarang
         <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
           <path
