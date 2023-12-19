@@ -8,9 +8,9 @@ export default function Navbar() {
   }
 
   return (
-    <nav className='w-full py-3 sticky bg-white top-0'>
+    <nav className='w-full fixed z-50 bg-white top-0 left-0 shadow-sm'>
       <div className="container mx-auto flex items-center justify-between">
-        <img src="https://i.ibb.co/30H4CbX/logo-qw-light.webp" className='w-40 p-2 md:w-60 lg:w-36' alt="logo-qw-light" border="0" />
+        <img src="https://i.ibb.co/30H4CbX/logo-qw-light.webp" className='w-40 p-2 md:w-60 lg:w-36 lg:ml-2' alt="logo-qw-light" border="0" />
         {isMenuActive ? (
           <button className='p-2 lg:hidden' onClick={onMenuClickHandle}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="black" className="w-8 h-8 md:w-12 md:h-12">
@@ -27,19 +27,18 @@ export default function Navbar() {
         )
         }
 
-        {/* for large screen */}
-        <ul className='hidden lg:flex gap-5 text-orangeKeyword text-xl font-bold item-center'>
-          <li className='p-2'><a href="" >Cloud Hosting</a></li>
-          <li className='p-2'><a href="">Server</a></li>
-          <li className='p-2'><a href="">Domain</a></li>
-          <li className='p-2'><a href="">Services</a> </li>
-          <li className='p-2'><a href="">Internet Access</a> </li>
-          <li className='p-2'><a href="">Customer Care</a> </li>
-          <li className='p-2'><a href="">🎁 Promo</a></li>
-        </ul>
-
-        <div className='hidden lg:inline mr-2 w-20'>
-          <button className='p-2 w-20 rounded-full bg-orange-500 text-white hover:bg-white hover:text-orange-500 font-bold text-xl hover:border hover:border-orange-500'>Log in</button>
+        <div className='hidden lg:flex mr-2 w-100 gap-20'>
+          {/* for large screen */}
+          <ul className='hidden lg:flex gap-4 text-orangeKeyword text-base font-bold item-center'>
+            <li className='p-2'><a href="" >Cloud Hosting</a></li>
+            <li className='p-2'><a href="">Server</a></li>
+            <li className='p-2'><a href="">Domain</a></li>
+            <li className='p-2'><a href="">Email Suit</a> </li>
+            <li className='p-2'><a href="">Services</a> </li>
+            <li className='p-2'><a href="">Internet Access</a> </li>
+            <li className='p-2'><a href="">🎁 Promo</a></li>
+          </ul>
+          <button className='p-2 w-20 rounded-full bg-orange-500 text-white hover:bg-white hover:text-orange-500 font-bold text-base hover:border hover:border-orange-500 hover:p-1'>Log in</button>
         </div>
 
 
