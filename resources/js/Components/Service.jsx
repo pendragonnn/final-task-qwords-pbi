@@ -14,9 +14,9 @@ export default function Service() {
         <h1 className='text-3xl lg:text-5xl font-bold'>Lihat Juga Layanan Kami Yang Lain</h1>
         <p className='text-base '>Optimalkan performa website bisnis Anda dengan berbagai layanan berkualitas dari Qwords</p>
       </div>
-
+      
       {/* service card */}
-      <div className='grid grid-cols-1 lg:grid-cols-3 h-[80vh] lg:h-[100vh] my-2 gap-2 lg:p-2 px-4'>
+      <div className='grid grid-cols-1 lg:grid-cols-3 h-fit lg:h-[100vh] md:h-[80vh] my-2 gap-2 lg:p-2 px-4'>
         <div className='flex md:justify-center items-start'>
           {/* card 1 */}
           <ServiceCard serviceData={serviceData[0]} />
