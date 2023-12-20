@@ -1,3 +1,4 @@
+import Commitment from '@/Components/Commitment'
 import Hero from '@/Components/Hero'
 import Packet from '@/Components/Packet'
 import Promo from '@/Components/Promo'
@@ -15,6 +16,7 @@ export default function Homepage() {
       <Promo />
       <Service />
       <Packet />
+      <Commitment />
     </>
   )
 }
