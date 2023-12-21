@@ -10,7 +10,7 @@ export default function TestimonyCarousel({testimonyData}) {
         {/* Name and position */}
         <div className='gap-3 font-bold p-2 text-center'>
           <h1 className='text-3xl'>{testimonyData.name}</h1>
-          <p className='text-xl text-orange-500'>Founder ID Cert</p>
+          <p className='text-xl text-orange-500'>{testimonyData.position}</p>
         </div>
         {/* Highlight testimonial */}
         <div className='lg:w-1/2 w-full'>
@@ -20,7 +20,7 @@ export default function TestimonyCarousel({testimonyData}) {
 
       {/* Testimonial description */}
       {/* Detail testimonial and button */}
-      <div className='flex flex-col gap-3 p-4  border-4 border-dotted lg:border-none'>
+      <div className='flex flex-col gap-3 p-4 border-2 rounded-xl border-dotted lg:border-none'>
         <p className='text-base text-black opacity-50 font-bold md:text-center '>{testimonyData.detailTestimony}</p>
         <button className='bg-orange-500 mx-auto text-white md:p-3 p-[5px] rounded-full'> <a target="_blank" href={testimonyData.linkYoutube}>Lihat video selengkapnya</a></button>
       </div>
