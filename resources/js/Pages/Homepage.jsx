@@ -8,6 +8,7 @@ import Promo from '@/Components/Promo'
 import QuestionAnswer from '@/Components/QuestionAnswer'
 import SearchDomain from '@/Components/SearchDomain'
 import Service from '@/Components/Service'
+import ServiceCenter from '@/Components/ServiceCenter'
 import Testimony from '@/Components/Testimony'
 import TrustCompany from '@/Components/TrustCompany'
 import React from 'react'
@@ -29,6 +30,7 @@ export default function Homepage() {
       <Media />
       <PaymentMethod />
       <QuestionAnswer />
+      <ServiceCenter />
     </>
   )
 }
