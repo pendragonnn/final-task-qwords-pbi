@@ -1,5 +1,6 @@
 import Commitment from '@/Components/Commitment'
 import Hero from '@/Components/Hero'
+import Media from '@/Components/Media'
 import Packet from '@/Components/Packet'
 import Partner from '@/Components/Partner'
 import Promo from '@/Components/Promo'
@@ -23,6 +24,7 @@ export default function Homepage() {
       <TrustCompany />
       <Partner />
       <Testimony />
+      <Media />
     </>
   )
 }
