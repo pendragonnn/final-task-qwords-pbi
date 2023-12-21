@@ -5,6 +5,7 @@ import Partner from '@/Components/Partner'
 import Promo from '@/Components/Promo'
 import SearchDomain from '@/Components/SearchDomain'
 import Service from '@/Components/Service'
+import Testimony from '@/Components/Testimony'
 import TrustCompany from '@/Components/TrustCompany'
 import React from 'react'
 import Navbar from '../Components/Navbar'
@@ -21,6 +22,7 @@ export default function Homepage() {
       <Commitment />
       <TrustCompany />
       <Partner />
+      <Testimony />
     </>
   )
 }
