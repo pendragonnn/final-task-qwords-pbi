@@ -13,6 +13,7 @@ import Testimony from '@/Components/Testimony'
 import TrustCompany from '@/Components/TrustCompany'
 import React from 'react'
 import Navbar from '../Components/Navbar'
+import Footer from '@/Components/Footer'
 
 export default function Homepage() {
   return (
@@ -31,6 +32,7 @@ export default function Homepage() {
       <PaymentMethod />
       <QuestionAnswer />
       <ServiceCenter />
+      <Footer />
     </>
   )
 }
