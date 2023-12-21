@@ -5,6 +5,7 @@ import Packet from '@/Components/Packet'
 import Partner from '@/Components/Partner'
 import PaymentMethod from '@/Components/PaymentMethod'
 import Promo from '@/Components/Promo'
+import QuestionAnswer from '@/Components/QuestionAnswer'
 import SearchDomain from '@/Components/SearchDomain'
 import Service from '@/Components/Service'
 import Testimony from '@/Components/Testimony'
@@ -27,6 +28,7 @@ export default function Homepage() {
       <Testimony />
       <Media />
       <PaymentMethod />
+      <QuestionAnswer />
     </>
   )
 }
