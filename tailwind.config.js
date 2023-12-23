@@ -23,7 +23,9 @@ export default withMT( {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-               "orangeKeyword": '#ff6d0b'
+               mediumCoco: '#613F1B',
+               grayBackground: '#DFE0DF',
+               darkCoco: '#402E32'
             }
         },
     },
