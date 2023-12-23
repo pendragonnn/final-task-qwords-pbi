@@ -25,7 +25,7 @@ export default function Hero() {
         </div>
 
         <div className='lg:w-1/2 w-full h-fit flex justify-center'>
-          <Carousel transition={{ duration: 2 }} className="rounded-xl">
+          <Carousel transition={{ duration: 2 }} autoplay={true} autoplayDelay={5000} loop={true} className="rounded-xl">
            <div className='bg-orange-300 h-[300px] rounded-tl-lg rounded-bl-lg shadow-lg flex items-center justify-between my-20 gap-5 px-5'>
            {/* image-carousel-1 */}
             <img className='w-1/2' src="https://www.qwords.com/wp-content/themes/qwords/assets/images/illustrations/bw.webp" alt="" />
