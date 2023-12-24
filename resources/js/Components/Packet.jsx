@@ -1,5 +1,6 @@
 import React from 'react'
 import PacketCard from './PacketCard'
+import TitleDescription from './TitleDescription'
 
 export default function Packet() {
   const packet = [
@@ -13,10 +14,7 @@ export default function Packet() {
   return (
     <section className='w-full h-fit px-3 '>
       {/* title and description */}
-      <div className='flex flex-col gap-5 text-center my-2'>
-        <h1 className='md:text-5xl text-3xl font-bold p-2'>Solusi Paket Hosting Terbaik dari Kami</h1>
-        <p className='text-base'>Kami menawarkan solusi paket hosting terbaik untuk segala kebutuhan website dan sistem Anda. Mulai dari blog hingga website bisnis dan perusahaan</p>
-      </div>
+      <TitleDescription title={'Solusi Paket Hosting Terbaik dari Kami'} description={'Kami menawarkan solusi paket hosting terbaik untuk segala kebutuhan website dan sistem Anda. Mulai dari blog hingga website bisnis dan perusahaan'}/>
 
       {/* packet cards */}
       <div className='grid grid-cols-1 md:grid-cols-3 px-5 gap-3 gap-y-3'>

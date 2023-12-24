@@ -1,5 +1,6 @@
 import React from 'react'
 import ServiceCard from './ServiceCard'
+import TitleDescription from './TitleDescription'
 
 export default function Service() {
   const serviceData = [
@@ -10,10 +11,7 @@ export default function Service() {
   return (
     <section className='w-full h-fit'>
       {/* title and description */}
-      <div className='flex flex-col gap-3 mt-5 p-2 items-center text-center'>
-        <h1 className='text-3xl lg:text-5xl font-bold'>Lihat Juga Layanan Kami Yang Lain</h1>
-        <p className='text-base '>Optimalkan performa website bisnis Anda dengan berbagai layanan berkualitas dari Qwords</p>
-      </div>
+      <TitleDescription title={"Lihat Juga Layanan Kami Yang Lain"}  description={'Optimalkan performa website bisnis Anda dengan berbagai layanan berkualitas dari Qwords'}/>
       
       {/* service card */}
       <div className='grid grid-cols-1 lg:grid-cols-3 h-fit lg:h-[100vh] md:h-[80vh] my-2 gap-2 lg:p-2 px-4'>
