@@ -8,6 +8,20 @@ export default function SearchDomain() {
     {domain: '.info', price: 77000}
   ]
 
+  function priceFormat(number) {
+    number = number.toString().replace(/[^,\d]/g, "");
+    number = parseInt(number.replace(/,/g, ""));
+  
+    const formatter = new Intl.NumberFormat('id-ID', {
+      style: 'currency',
+      currency: 'IDR',
+    });
+  
+    let value = formatter.format(number);
+  
+    return value;
+  }
+
   return (
     <section className='w-full h-fit bg-orange-500 text-white md:py-5 py-3' style={{backgroundImage: 'url("https://i.ibb.co/5YLswnN/bg-fix.png")'}}>
       {/* title and description */}
@@ -45,7 +59,7 @@ export default function SearchDomain() {
         {priceList.map((price) => (
           <div className=' border-blue-900 rounded-xl border-2'>
             <p className='text-base md:text-xl bg-blue-900 pt-2 px-2 rounded-tl-lg rounded-tr-lg'>{price.domain}</p>
-            <p className='text-xl md:text-3xl p-2'>Rp. {price.price}</p>
+            <p className='text-xl md:text-3xl p-2'>{priceFormat(price.price)}</p>
           </div>
         ))}
         </div>

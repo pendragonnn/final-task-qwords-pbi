@@ -1,13 +1,26 @@
 import { Card } from 'flowbite-react';
 
 export default function PromoCard({ promoData }) {
+  function priceFormat(number) {
+    number = number.toString().replace(/[^,\d]/g, "");
+    number = parseInt(number.replace(/,/g, ""));
+
+    const formatter = new Intl.NumberFormat('id-ID', {
+      style: 'currency',
+      currency: 'IDR',
+    });
+
+    let value = formatter.format(number);
+
+    return value;
+  }
   return (
     <Card className="text-center">
       <h5 className="text-2xl tracking-tight text-white bg-orange-500 rounded-full p-2 font-bold">
         {promoData.valueCloudHosting}
       </h5>
-      <small className='line-through'>Rp. {promoData.price}</small>
-      <p className='text-orange-500 text-3xl font-bold'>Rp. {promoData.discountPrice}</p>
+      <small className='line-through'>{priceFormat(promoData.price)}</small>
+      <p className='text-orange-500 text-3xl font-bold'>{priceFormat(promoData.discountPrice)}</p>
       <div className="grid grid-cols-2 gap-2 w-full text-start mb-5 text-sm items-center font-bold">
         <div className='text-center p-1'>
           <p className='text-base'>Disk </p>

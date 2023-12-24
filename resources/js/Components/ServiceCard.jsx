@@ -2,6 +2,19 @@ import React from 'react'
 import { Card } from 'flowbite-react';
 
 export default function ServiceCard({ serviceData }) {
+  function priceFormat(number) {
+    number = number.toString().replace(/[^,\d]/g, "");
+    number = parseInt(number.replace(/,/g, ""));
+
+    const formatter = new Intl.NumberFormat('id-ID', {
+      style: 'currency',
+      currency: 'IDR',
+    });
+
+    let value = formatter.format(number);
+
+    return value;
+  }
   return (
     <Card className="text-center h-[250px] w-[500px] bg-orange-500">
       {/* title and price */}
@@ -10,7 +23,7 @@ export default function ServiceCard({ serviceData }) {
           {serviceData.title}
         </h5>
         <p className='text-sm md:text-xl text-white font-bold'>
-          Rp. {serviceData.price} <small className='text-sm'>/{serviceData.range}</small>
+          {priceFormat(serviceData.price)} <small className='text-sm'>/{serviceData.range}</small>
         </p>
       </div>
       <p className='text-sm text-white'>
