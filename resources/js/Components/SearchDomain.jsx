@@ -43,9 +43,9 @@ export default function SearchDomain() {
         {/* domain price section */}
         <div className='flex md:flex-col flex-row text-center gap-4 font-bold'>
         {priceList.map((price) => (
-          <div className=' border-blue-900 p-2 rounded-xl border-2'>
-            <p className='text-base md:text-xl'>{price.domain}</p>
-            <p className='text-xl md:text-3xl '>Rp. {price.price}</p>
+          <div className=' border-blue-900 rounded-xl border-2'>
+            <p className='text-base md:text-xl bg-blue-900 pt-2 px-2 rounded-tl-lg rounded-tr-lg'>{price.domain}</p>
+            <p className='text-xl md:text-3xl p-2'>Rp. {price.price}</p>
           </div>
         ))}
         </div>
