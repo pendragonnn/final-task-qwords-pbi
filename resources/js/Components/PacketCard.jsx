@@ -3,20 +3,18 @@ import { Card } from 'flowbite-react';
 
 export default function PacketCard({ packetData }) {
   return (
-    <div className='flex items-center justify-center'>
       <Card
-        className="w-full h-full bg-orange-500"
+        className="relative w-full h-full bg-orange-500 group/item"
         imgAlt="Meaningful alt text for an image that is not purely decorative"
         imgSrc={packetData.img}
       >
-        <h5 className="text-2xl text-white font-bold tracking-tight dark:text-white">
+        <h5 className="absolute top-4 left-4 text-2xl text-white font-extrabold tracking-tight">
           {packetData.title}
         </h5>
-        <p className="font-normal text-white dark:text-gray-400">
+        <p className="font-normal text-white">
           {packetData.description}
         </p>
       </Card>
-    </div>
 
   )
 }

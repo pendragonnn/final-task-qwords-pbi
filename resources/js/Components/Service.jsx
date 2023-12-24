@@ -9,7 +9,7 @@ export default function Service() {
     { title: 'Colocation Server', description: 'Akses cepat dari seluruh dunia dengan fasilitas 24x7 full monitoring dengan cooling system terbaik serta fire extinguisher.', price: 500000, range: 'bulan' },
   ]
   return (
-    <section className='w-full h-fit'>
+    <section className='w-full h-fit px-5'>
       {/* title and description */}
       <TitleDescription title={"Lihat Juga Layanan Kami Yang Lain"}  description={'Optimalkan performa website bisnis Anda dengan berbagai layanan berkualitas dari Qwords'}/>
       
