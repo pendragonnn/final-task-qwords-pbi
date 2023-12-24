@@ -9,15 +9,15 @@ export default function Promo() {
       {valueCloudHosting : 'VPS SC1', price: 135000, discountPrice: 75000, disk: 25, bandwith: 'Unlimited', coreCPU: 1, addOn: 'Unlimited'}
     ]
   return (
-    <section className='h-fit p-3'>
+    <section className='h-fit p-3 mx-4'>
       {/* title and description */}
       <div className='flex flex-col gap-5 text-center my-2'>
         <h1 className='md:text-5xl text-3xl font-bold p-2'>Cloud Hosting Indonesia <span className='text-orange-500'>Diskon Hingga 50%</span></h1>
-        <p className='text-base'>Layanan cloud hosting indonesia terbaik dengan teknologi andal untuk website anda</p>
+        <p className='md:text-xl text-base'>Layanan cloud hosting indonesia terbaik dengan teknologi andal untuk website anda</p>
       </div>
 
       {/* promo card */}
-      <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4'>
+      <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1'>
       {promoList.map((promo, index) => (
         <PromoCard key={index} promoData={promo} />
       ))}

@@ -15,33 +15,49 @@ export default function PromoCard({ promoData }) {
     return value;
   }
   return (
-    <Card className="text-center">
+    <Card className="text-center m-3">
       <h5 className="text-2xl tracking-tight text-white bg-orange-500 rounded-full p-2 font-bold">
         {promoData.valueCloudHosting}
       </h5>
       <small className='line-through'>{priceFormat(promoData.price)}</small>
       <p className='text-orange-500 text-3xl font-bold'>{priceFormat(promoData.discountPrice)}</p>
-      <div className="grid grid-cols-2 gap-2 w-full text-start mb-5 text-sm items-center font-bold">
-        <div className='text-center p-1'>
-          <p className='text-base'>Disk </p>
+      <div className="grid grid-cols-2 gap-2 text-start mb-5 text-sm items-center font-bold">
+        <div className='text-center p-1 w-full'>
+          {/* icon and title box */}
+          <div className='flex flex-col items-center justify-center'>
+            <img className='h-[32px]' src="https://www.qwords.com/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/disk.webp" alt="" />
+            <p className='text-base'>Disk </p>
+          </div>
           <span className='text-orange-500 text-2xl'>
             {promoData.disk}
           </span>
         </div>
-        <div className='text-center p-1'>
-          <p className='text-base'>Bandwith </p>
+        <div className='text-center p-1 w-full'>
+          {/* icon and title box */}
+          <div className='flex flex-col items-center justify-center'>
+            <img className='h-[32px]' src="https://www.qwords.com/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/bandwidth.webp" alt="" />
+            <p className='text-base'>Bandwith </p>
+          </div>
           <span className='text-orange-500 text-2xl'>
             {promoData.bandwith}
           </span>
         </div>
-        <div className='text-center p-1'>
-          <p className='text-base'>Core CPU </p>
+        <div className='text-center p-1 w-full'>
+          {/* icon and title box */}
+          <div className='flex flex-col items-center justify-center'>
+            <img className='h-[32px]' src="https://www.qwords.com/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/cpu.webp" alt="" />
+            <p className='text-base'>Core CPU</p>
+          </div>
           <span className='text-orange-500 text-2xl'>
             {promoData.coreCPU} Core
           </span>
         </div>
-        <div className='text-center p-1'>
-          <p className='text-base'>Addon/Parked Domain </p>
+        <div className='text-center p-1 w-full'>
+          {/* icon and title box */}
+          <div className='flex flex-col items-center justify-center'>
+            <img className='h-[32px]' src="https://www.qwords.com/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/addon.webp" alt="" />
+            <p className='text-base'>Add On/Parked Domain</p>
+          </div>
           <span className='text-orange-500 text-2xl'>
             {promoData.addOn}
           </span>
