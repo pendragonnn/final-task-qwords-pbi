@@ -17,7 +17,7 @@ export default function Packet() {
       <TitleDescription title={'Solusi Paket Hosting Terbaik dari Kami'} description={'Kami menawarkan solusi paket hosting terbaik untuk segala kebutuhan website dan sistem Anda. Mulai dari blog hingga website bisnis dan perusahaan'}/>
 
       {/* packet cards */}
-      <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 px-5 gap-3 gap-y-3'>
+      <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 p-5 gap-3 gap-y-3'>
         {packet.map((packet) => (
           <PacketCard packetData={packet} />
         ))}
