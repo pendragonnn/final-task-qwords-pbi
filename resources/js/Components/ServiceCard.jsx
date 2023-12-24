@@ -16,7 +16,9 @@ export default function ServiceCard({ serviceData }) {
     return value;
   }
   return (
-    <Card className="text-center h-[250px] w-[500px] bg-orange-500">
+    <Card className="relative text-center h-[250px] w-[500px] bg-gradient-to-br from-orange-400 to-orange-500 ">
+      <div className='absolute top-3 left-3 bg-orange-100 rounded-full h-[30px] w-[30px]'>
+      </div>
       {/* title and price */}
       <div className='flex justify-evenly items-center mx-5'>
         <h5 className="text-xl md:text-2xl tracking-tight text-center text-white rounded-full p-2 font-bold">
