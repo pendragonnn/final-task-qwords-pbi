@@ -12,15 +12,15 @@ export default function Hero() {
           </h1>
           <span className='text-center md:text-5xl text-3xl font-bold'>Untuk Keperluan Perusahaan Anda</span>
 
-          <div className='my-5 text-center font-bold text-base md:text-xl'>
+          <div className='my-5 text-center font-bold text-base'>
             Qwords menawarkan layanan yang cepat, aman, dan dukungan 24 jam untuk memenuhi kebutuhan hosting Anda. Tersertifikasi ISO 27001 dengan Data Center Tier 3.
           </div>
 
-          <div className='flex gap-5'>
-            <div className='bg-orange-500 p-3 text-white font-bold rounded-xl'>
-              #QwordsYourSuccess
-            </div>
-            <button className='border border-orange-500 bg-white p-3 text-orange-500 rounded-full'>Pesan Sekarang</button>
+          {/* certificate logo box */}
+          <div className='flex gap-3 justify-evenly items-center mb-3'>
+            <img className='h-[60px]' src="https://www.qwords.com/wp-content/themes/qwords/assets/images/icons/icann-logo.webp" alt="" />
+            <img className='h-[60px]' src="https://www.qwords.com/wp-content/themes/qwords/assets/images/icons/logobsi-black.webp" alt="" />
+            <img className='h-[60px]' src="https://www.qwords.com/wp-content/themes/qwords/assets/images/icons/logoaccreditedpandi.webp" alt="" />
           </div>
         </div>
 
@@ -48,7 +48,6 @@ export default function Hero() {
             </div>
            </div>
           </Carousel>
-          {/* <img className='w-3/4 md:w-fit' src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/illustrations/storesection.webp" alt="" /> */}
         </div>
       </div>
     </section>
