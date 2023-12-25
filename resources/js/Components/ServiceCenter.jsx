@@ -12,25 +12,25 @@ export default function ServiceCenter() {
           <p className='font-bold'>Kami siap membantu anda 24 jam</p>
         </div>
         <div className='grid lg:grid-cols-2 gap-2 text-white md:mx-5'>
-          <div className='w-full text-center text-sm lg:text-base flex lg:gap-3 gap-2 items-center justify-start p-2 border rounded-full bg-orange-500'>
+          <div className='w-full text-start text-sm lg:text-base flex lg:gap-3 gap-2 items-center justify-start p-2 border rounded-full bg-orange-500'>
             <div className='bg-white p-2 rounded-full'>
               <img className='w-full' src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/phoneAlt.svg" alt="" />
             </div>
             <p>0804-1-808-888</p>
           </div>
-          <div className='w-full text-center text-sm md:text-base flex lg:gap-3 gap-2 items-center justify-start p-2 border rounded-full bg-orange-500'>
+          <div className='w-full text-start text-sm md:text-base flex lg:gap-3 gap-2 items-center justify-start p-2 border rounded-full bg-orange-500'>
             <div className='bg-white p-2 rounded-full'>
               <img className='w-full' src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/phoneAlt.svg" alt="" />
             </div>
             <p>02139708800</p>
           </div>
-          <div className='w-full text-center text-sm md:text-base flex lg:gap-3 gap-2 items-center justify-start p-2 border rounded-full bg-orange-500'>
+          <div className='w-full text-start text-sm md:text-base flex lg:gap-3 gap-2 items-center justify-start p-2 border rounded-full bg-orange-500'>
             <div className='bg-white p-2 rounded-full'>
               <img className='w-full' src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/waAlt.svg" alt="" />
             </div>
             <p>+62817437111 (WhatsApp only)</p>
           </div>
-          <div className='w-full text-center text-sm md:text-base flex lg:gap-3 gap-2 items-center justify-start p-2 border rounded-full bg-orange-500'>
+          <div className='w-full text-start text-sm md:text-base flex lg:gap-3 gap-2 items-center justify-start p-2 border rounded-full bg-orange-500'>
             <div className='bg-white p-2 rounded-full'>
               <img className='w-full' src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/emailAlt.svg" alt="" />
             </div>
