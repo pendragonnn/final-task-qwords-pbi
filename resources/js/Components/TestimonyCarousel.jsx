@@ -20,9 +20,9 @@ export default function TestimonyCarousel({testimonyData}) {
 
       {/* Testimonial description */}
       {/* Detail testimonial and button */}
-      <div className='flex flex-col gap-3 p-4 border-2 rounded-xl border-dotted lg:border-none'>
-        <p className='text-base text-black opacity-50 font-bold md:text-center '>{testimonyData.detailTestimony}</p>
-        <button className='bg-orange-500 mx-auto text-white md:p-3 p-[5px] rounded-full'> <a target="_blank" href={testimonyData.linkYoutube}>Lihat video selengkapnya</a></button>
+      <div className='flex flex-col lg:flex-row justify-evenly items-center gap-3 p-4 border-2 rounded-xl border-dotted lg:border-none'>
+        <p className='lg:w-1/2 text-base text-black opacity-50 font-bold md:text-center '>{testimonyData.detailTestimony}</p>
+        <button className='bg-orange-500 mx-auto text-white md:p-3 p-2 rounded-full'> <a target="_blank" href={testimonyData.linkYoutube}>Lihat video selengkapnya</a></button>
       </div>
     </div>
   );
