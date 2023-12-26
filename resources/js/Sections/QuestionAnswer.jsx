@@ -1,5 +1,5 @@
 import React from 'react'
-import QuestionAnswerAccordion from './QuestionAnswerAccordion'
+import QuestionAnswerAccordion from '../Components/QuestionAnswerAccordion'
 
 export default function QuestionAnswer() {
   const questionAnswerData = [

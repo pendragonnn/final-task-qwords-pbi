@@ -1,7 +1,7 @@
 import { Carousel } from 'flowbite-react'
 import React from 'react'
-import TestimonyCarousel from './TestimonyCarousel'
-import TitleDescription from './TitleDescription'
+import TestimonyCarousel from '../Components/TestimonyCarousel'
+import TitleDescription from '../Components/TitleDescription'
 
 export default function Testimony() {
   const testimony = [

@@ -1,5 +1,5 @@
 import React from 'react'
-import PromoCard from './PromoCard'
+import PromoCard from '../Components//PromoCard'
 
 export default function Promo() {
   const promoList = [

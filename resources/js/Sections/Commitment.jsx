@@ -1,7 +1,6 @@
 import React from 'react'
-import CommitmentAccordion from './CommitmentAccordion'
-import TitleDescription from './TitleDescription'
-import { Accordion } from 'flowbite-react';
+import CommitmentAccordion from '../Components/CommitmentAccordion'
+import TitleDescription from '../Components/TitleDescription'
 
 export default function Commitment() {
   const commitmentData = [

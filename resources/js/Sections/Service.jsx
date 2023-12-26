@@ -1,6 +1,6 @@
 import React from 'react'
-import ServiceCard from './ServiceCard'
-import TitleDescription from './TitleDescription'
+import ServiceCard from '../Components/ServiceCard'
+import TitleDescription from '../Components/TitleDescription'
 
 export default function Service() {
   const serviceData = [

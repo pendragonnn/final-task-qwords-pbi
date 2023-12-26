@@ -1,6 +1,6 @@
 import React from 'react'
-import PacketCard from './PacketCard'
-import TitleDescription from './TitleDescription'
+import PacketCard from '../Components/PacketCard'
+import TitleDescription from '../Components/TitleDescription'
 
 export default function Packet() {
   const packet = [
