@@ -16,7 +16,7 @@ export default function PaymentMethod() {
 
 
       {/* logo payment */}
-      <div className='px-3'>
+      <div className='px-3 flex items-center justify-center'>
         <img className='rounded-lg' src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/all-payment.webp" alt="" />
       </div>
     </section>
