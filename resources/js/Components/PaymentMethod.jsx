@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function PaymentMethod() {
   return (
-    <section className='h-fit mx-6 py-5 bg-orange-200 my-3 rounded-lg'>
+    <section data-aos="zoom-in-down" className='h-fit mx-6 py-5 bg-orange-200 my-3 rounded-lg'>
       {/* description */}
       <div className='p-2 flex flex-col items-center mx-auto w-fit mb-3 gap-2 text-center'>
         <h1 className='font-bold text-xl'>Pilih Metode E-payment Otomatis</h1>

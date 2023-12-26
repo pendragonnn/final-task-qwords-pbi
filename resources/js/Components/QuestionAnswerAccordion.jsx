@@ -17,7 +17,7 @@ export default function AccordionCustomAnimation({ questionAnswerDataDetail }) {
 
   return (
     <>
-      <Accordion open={open === 1} animate={CUSTOM_ANIMATION} className="px-5 my-2">
+      <Accordion data-aos="zoom-in-down" open={open === 1} animate={CUSTOM_ANIMATION} className="px-5 my-2">
         <AccordionHeader onClick={() => handleOpen(1)} className="text-orange-500 mx-auto px-3 hover:opacity-50 hover:text-orange-500">{questionAnswerDataDetail.question}</AccordionHeader>
         <AccordionBody className="px-3 text-base">
           {questionAnswerDataDetail.answer}

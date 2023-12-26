@@ -4,6 +4,7 @@ import { Card } from 'flowbite-react';
 export default function PacketCard({ packetData }) {
   return (
       <Card
+      data-aos="zoom-in"
         className="relative w-full h-full bg-orange-500 group/item"
         imgAlt="Meaningful alt text for an image that is not purely decorative"
         imgSrc={packetData.img}

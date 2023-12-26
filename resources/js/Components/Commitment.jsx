@@ -24,14 +24,14 @@ export default function Commitment() {
 
       {/* accordion commitment */}
       <div className='grid md:grid-cols-2 grid-cols-1 px-5 lg:gap-3'>
-        <div className=''>
+        <div>
           {commitmentDataFirst.map((commitment) => (
-            <CommitmentAccordion commitmentData={commitment} />
+            <CommitmentAccordion key={commitment.title} commitmentData={commitment} />
           ))}
         </div>
-        <div className=''>
+        <div>
           {commitmentDataSecond.map((commitment) => (
-            <CommitmentAccordion commitmentData={commitment} />
+            <CommitmentAccordion key={commitment.title} commitmentData={commitment} />
           ))}
         </div>
 

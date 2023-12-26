@@ -15,7 +15,7 @@ export default function PromoCard({ promoData }) {
     return value;
   }
   return (
-    <Card className="text-center m-3">
+    <Card data-aos="fade-up" className="text-center m-3">
       <h5 className="text-2xl tracking-tight text-white bg-orange-500 rounded-full p-2 font-bold">
         {promoData.valueCloudHosting}
       </h5>

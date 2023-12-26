@@ -2,7 +2,7 @@ import { Accordion } from 'flowbite-react';
 
 export default function CommitmentAccordion({ commitmentData }) {
   return (
-    <Accordion collapseAll className='my-1'>
+    <Accordion collapseAll className='my-1' data-aos="zoom-in-left">
       <Accordion.Panel>
         <Accordion.Title className='bg-orange-500 hover:bg-orange-500 text-white'>
           <div className='flex items-center gap-5'>

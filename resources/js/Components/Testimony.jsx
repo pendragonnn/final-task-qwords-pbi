@@ -14,27 +14,27 @@ export default function Testimony() {
       <TitleDescription title='Apa Kata Mereka?' description='Apa kata mereka yang sudah menggunakan layanan web hosting Indonesia dari Qwords? Simak pengalaman mereka yang telah membuktikan sendiri fitur dari layanan kami.' />
       <div className="relative h-fit bg-orange-300 py-5 mx-6 rounded-lg">
         {/* rectangle decoration top left */}
-        <div className='hidden md:inline absolute rounded-lg bg-yellow-500 w-[80px] h-[36px] rotate-45 top-16 right-12'></div>
-        <div className='hidden md:inline absolute rounded-lg bg-yellow-400 w-[40px] h-[36px] rotate-45 top-8 right-8'></div>
+        <div data-aos="zoom-in-down" className='hidden md:inline absolute rounded-lg bg-yellow-500 w-[80px] h-[36px]  top-16 right-12'></div>
+        <div data-aos="zoom-in-down" className='hidden md:inline absolute rounded-lg bg-yellow-400 w-[40px] h-[36px]  top-8 right-8'></div>
 
         {/* star decorate top right */}
-        <div className='hidden md:inline absolute rounded-lg bg-orange-500 w-[36px] h-[36px] top-8 left-8'></div>
-        <div className='hidden md:inline absolute rounded-lg bg-orange-500 w-[36px] h-[36px] rotate-45 top-8 left-8'></div>
+        <div data-aos="zoom-in-down" className='hidden md:inline absolute rounded-lg bg-orange-500 w-[36px] h-[36px] top-8 left-8'></div>
+        <div data-aos="zoom-in-down" className='hidden md:inline absolute rounded-lg bg-orange-500 w-[36px] h-[36px]  top-8 left-8'></div>
 
         {/* circle decoration bottom left*/}
-        <div className='hidden md:inline absolute rounded-full bg-yellow-400 w-[36px] h-[36px] bottom-5 left-10'></div>
-        <div className='hidden md:inline absolute rounded-full bg-orange-500 w-[50px] h-[50px] bottom-10 left-20'></div>
-        <div className='hidden md:inline absolute rounded-full bg-white opacity-50 w-[40px] h-[40px] bottom-16 left-10'></div>
+        <div data-aos="zoom-in-up" className='hidden md:inline absolute rounded-full bg-yellow-400 w-[36px] h-[36px] bottom-5 left-10'></div>
+        <div data-aos="zoom-in-up" className='hidden md:inline absolute rounded-full bg-orange-500 w-[50px] h-[50px] bottom-10 left-20'></div>
+        <div data-aos="zoom-in-up" className='hidden md:inline absolute rounded-full bg-white opacity-50 w-[40px] h-[40px] bottom-16 left-10'></div>
 
         {/* rectangle decoration bottom right */}
-        <div className='hidden md:inline absolute rounded-full bg-white opacity-40 w-[120px] h-[36px] bottom-28 right-10'></div>
-        <div className='hidden md:inline absolute rounded-full bg-white opacity-40 w-[80px] h-[36px] bottom-16 right-10'></div>
-        <div className='hidden md:inline absolute rounded-full bg-white opacity-40 w-[40px] h-[36px] bottom-5 right-10'></div>
+        <div data-aos="zoom-in-up" className='hidden md:inline absolute rounded-full bg-white opacity-40 w-[120px] h-[36px] bottom-28 right-10'></div>
+        <div data-aos="zoom-in-up" className='hidden md:inline absolute rounded-full bg-white opacity-40 w-[80px] h-[36px] bottom-16 right-10'></div>
+        <div data-aos="zoom-in-up" className='hidden md:inline absolute rounded-full bg-white opacity-40 w-[40px] h-[36px] bottom-5 right-10'></div>
 
         <Carousel slideInterval={5000} className="">
           {/* testimoni box */}
           {testimony.map((testimonyData) => (
-            <TestimonyCarousel testimonyData={testimonyData} />
+            <TestimonyCarousel key={testimonyData.highlightTestimony} testimonyData={testimonyData} />
           ))}
         </Carousel>
       </div>

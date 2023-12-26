@@ -11,7 +11,7 @@ export default function Promo() {
   return (
     <section className='h-fit p-3 mx-4'>
       {/* title and description */}
-      <div className='flex flex-col gap-5 text-center my-2'>
+      <div data-aos="fade-right" data-aos-duration="1500"  className='flex flex-col gap-5 text-center my-2'>
         <h1 className='md:text-5xl text-3xl font-bold p-2'>Cloud Hosting Indonesia <span className='text-orange-500'>Diskon Hingga 50%</span></h1>
         <p className='md:text-xl text-base'>Layanan cloud hosting indonesia terbaik dengan teknologi andal untuk website anda</p>
       </div>

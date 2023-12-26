@@ -15,15 +15,15 @@ export default function Service() {
       
       {/* service card */}
       <div className='grid grid-cols-1 lg:grid-cols-3 h-fit lg:h-[100vh] md:h-[80vh] my-2 gap-2 lg:p-2 px-4'>
-        <div className='flex md:justify-center items-start'>
+        <div data-aos="fade-right" data-aos-delay="500" className='flex md:justify-center items-start'>
           {/* card 1 */}
           <ServiceCard serviceData={serviceData[0]} />
         </div>
-        <div className='flex md:justify-center lg:items-center'>
+        <div data-aos="fade-right" data-aos-delay="500" className='flex md:justify-center lg:items-center'>
           {/* card 2 */}
           <ServiceCard serviceData={serviceData[1]} />
         </div>
-        <div className='flex md:justify-center lg:items-end'>
+        <div data-aos="fade-right" data-aos-delay="500" className='flex md:justify-center lg:items-end'>
           {/* card 3 */}
           <ServiceCard serviceData={serviceData[2]} />
         </div>

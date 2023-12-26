@@ -6,7 +6,7 @@ export default function TrustCompany() {
       {/* title and company logo*/}
       <div className='md:flex md:justify-between'>
         {/* title and more info */}
-        <div className='flex flex-col md:gap-10 gap-5 my-5 md:my-0 items-center justify-center mx-auto text-center'>
+        <div data-aos="fade-left" className='flex flex-col md:gap-10 gap-5 my-5 md:my-0 items-center justify-center mx-auto text-center'>
           <h1 className='text-3xl font-bold'>Telah Dipercaya oleh 45.000+ Pelanggan Aktif</h1>
           <div className='flex gap-1 items-center'>
             <a className='text-orange-500' href="">Dan Masih Banyak yang Lainnya </a>
@@ -15,7 +15,7 @@ export default function TrustCompany() {
         </div>
 
         {/* company logo */}
-        <div className='grid grid-cols-3 lg:w-1/2 md:w-full w-fit gap-1 items-center'>
+        <div data-aos="flip-up" className='grid grid-cols-3 lg:w-1/2 md:w-full w-fit gap-1 items-center'>
           <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/partner-customer/Pelanggan/Cimory.webp" alt="" />
           <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/partner-customer/Pelanggan/Forisa.webp" alt="" />
           <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/partner-customer/Pelanggan/Elsheskin.webp" alt="" />

@@ -25,9 +25,9 @@ export default function SearchDomain() {
   return (
     <section className='w-full h-fit bg-orange-500 text-white md:py-5 py-3' style={{backgroundImage: 'url("https://i.ibb.co/5YLswnN/bg-fix.png")'}}>
       {/* title and description */}
-      <div className='flex flex-col gap-3 text-center items-center mt-5'>
+      <div data-aos="fade-right" className='flex flex-col gap-3 text-center items-center mt-5'>
         <h1 className='text-3xl md:text-5xl font-bold p-2 border border-blue-900 rounded-xl bg-blue-900'>Cari nama domainmu</h1>
-        <p className='w-2/4 md:text-xl text-sm my-4'>
+        <p className='animate__bounceIn w-2/4 md:text-xl text-sm my-4'>
           Nama Domain digunakan untuk mempermudah pengunjung menuju ke situs Anda. Pilih nama domain yang paling mencerminkan bisnis, produk, atau layanan Anda.
         </p>
       </div>
@@ -35,7 +35,7 @@ export default function SearchDomain() {
       {/* box for form section and domain price section */}
       <div className='flex md:flex-row flex-col md:justify-evenly my-5 items-center lg:px-10'>
         {/* form, dropdown, and search button */}
-        <div className='flex flex-col gap-3 lg:w-1/2 lg:mb-0 mb-2 bg-orange-500 p-3 rounded-xl'>
+        <div data-aos="fade-right" className='flex flex-col gap-3 lg:w-1/2 lg:mb-0 mb-2 bg-orange-500 p-3 rounded-xl'>
           <form action="" className='flex w-full gap-3 items-center'>
             <input type="text" className='rounded-lg w-full text-black' placeholder='Cari nama domain anda' />
             {/* dropdown style manual */}
@@ -57,7 +57,7 @@ export default function SearchDomain() {
         {/* domain price section */}
         <div className='flex md:flex-col flex-row flex-wrap justify-center md:flex-nowrap md:justify-normal text-center gap-4 font-bold'>
         {priceList.map((price) => (
-          <div className=' border-blue-900 rounded-xl border-2'>
+          <div key={price.domain} data-aos="fade-up" className=' border-blue-900 rounded-xl border-2'>
             <p className='text-base md:text-xl bg-blue-900 pt-2 px-2 rounded-tl-lg rounded-tr-lg'>{price.domain}</p>
             <p className='text-xl md:text-3xl p-2'>{priceFormat(price.price)}</p>
           </div>

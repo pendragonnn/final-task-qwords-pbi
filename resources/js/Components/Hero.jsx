@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className='container mx-auto mt-20 lg:mt-5 md:h-[100vh] flex'>
       <div className='flex lg:flex-row flex-col items-center lg:justify-between justify-center gap-3 lg:gap-2 mx-0'>
-        <div className='lg:w-1/2 w-full h-fit flex flex-col items-center p-2'>
+        <div data-aos="fade-right" data-aos-duration="1500" className='lg:w-1/2 w-full h-fit flex flex-col items-center p-2'>
           <h1 className='md:text-5xl text-3xl text-center font-bold p-2 bg-orange-500 rounded-tl-lg rounded-br-lg mb-2'>
             <Typed className='text-white font-bold' strings={['Cloud Hosting', 'Server', 'Domain']} typeSpeed={50} loop />
           </h1>
@@ -17,14 +17,14 @@ export default function Hero() {
           </div>
 
           {/* certificate logo box */}
-          <div className='flex gap-3 justify-evenly items-center mb-3'>
-            <img className='h-[60px]' src="https://www.qwords.com/wp-content/themes/qwords/assets/images/icons/icann-logo.webp" alt="" />
-            <img className='h-[60px]' src="https://www.qwords.com/wp-content/themes/qwords/assets/images/icons/logobsi-black.webp" alt="" />
-            <img className='h-[60px]' src="https://www.qwords.com/wp-content/themes/qwords/assets/images/icons/logoaccreditedpandi.webp" alt="" />
+          <div className='flex gap-3 mt-2 justify-evenly items-center mb-3'>
+            <img className='animate__animated animate__bounce animate__repeat-2 h-[60px]' src="https://www.qwords.com/wp-content/themes/qwords/assets/images/icons/icann-logo.webp" alt="" />
+            <img className='animate__animated animate__bounce animate__repeat-2 h-[60px]' src="https://www.qwords.com/wp-content/themes/qwords/assets/images/icons/logobsi-black.webp" alt="" />
+            <img className='animate__animated animate__bounce animate__repeat-2 h-[60px]' src="https://www.qwords.com/wp-content/themes/qwords/assets/images/icons/logoaccreditedpandi.webp" alt="" />
           </div>
         </div>
 
-        <div className='lg:w-1/2 w-full h-fit flex justify-center'>
+        <div data-aos="fade-right" data-aos-duration="1500" className='lg:w-1/2 w-full h-fit flex justify-center'>
           <Carousel transition={{ duration: 2 }} autoplay={true} autoplayDelay={5000} loop={true} className="rounded-xl">
            <div className='bg-orange-300 h-[300px] rounded-tl-lg rounded-bl-lg shadow-lg flex items-center justify-between my-20 gap-5 px-5'>
            {/* image-carousel-1 */}

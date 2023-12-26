@@ -13,13 +13,13 @@ export default function QuestionAnswer() {
   return (
     <section className='px-5 h-fit my-10'>
       {/* title */}
-      <div className='md:w-3/4 w-full flex items-center mx-auto p-2'>
+      <div data-aos="fade-right" className='md:w-3/4 w-full flex items-center mx-auto p-2'>
         <h1 className='font-bold md:text-5xl text-3xl p-1 text-center'>Pertanyaan Seputar <span className='text-orange-500'>Layanan Web Hosting</span> Qwords</h1>
       </div>
 
       {/* question answer accordion */}
       {questionAnswerData.map((questionAnswerData) => (
-        <QuestionAnswerAccordion questionAnswerDataDetail={questionAnswerData}/>
+        <QuestionAnswerAccordion key={questionAnswerData.question} questionAnswerDataDetail={questionAnswerData}/>
       ))}
     </section>
   )
