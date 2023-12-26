@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className='container mx-auto mt-20 lg:mt-5 md:h-[100vh] flex'>
       <div className='flex lg:flex-row flex-col items-center lg:justify-between justify-center gap-3 lg:gap-2 mx-0'>
-        <div data-aos="fade-right" data-aos-duration="1500" className='lg:w-1/2 w-full h-fit flex flex-col items-center p-2'>
+        <div data-aos="fade-right" data-aos-duration="1500" className='lg:w-1/2 w-full h-fit flex flex-col items-center px-5'>
           <h1 className='md:text-5xl text-3xl text-center font-bold p-2 bg-orange-500 rounded-tl-lg rounded-br-lg mb-2'>
             <Typed className='text-white font-bold' strings={['Cloud Hosting', 'Server', 'Domain']} typeSpeed={50} loop />
           </h1>
