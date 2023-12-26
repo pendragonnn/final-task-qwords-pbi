@@ -1,3 +1,11 @@
+## About
+
+Welcome to the QWords Landing Page Revamp Repository!
+
+## Project Overview
+
+As part of my virtual internship program, I collaborated with the QWords web development team to revamp the company's landing page. This project aimed to enhance the overall user experience, boost engagement, and drive service sales.
+
 ## How To Run It❓
 
 <ol>
