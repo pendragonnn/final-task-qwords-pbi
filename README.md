@@ -1,3 +1,43 @@
+## How To Run It❓
+
+<ol>
+    <li>Clone this repository to your local computer storage</li>
+
+```bash
+git clone https://github.com/pendragonnn/final-task-qwords-pbi.git
+```
+   
+<li>Create the .env file referencing to .env.example or you can simply just change .env.example to .env (dont forget to change the value using your environment data!)</li>
+<li>Open your local file at visual studio code or whatever code editor you use </li>
+<li>At the same directory location, Open terminal and run composer install to get all denpendencies that used to run this project</li>
+
+```bash
+composer install
+```
+
+<li>Run php artisan serve to start the laravel</li>
+
+```bash
+php artisan serve --port=8000
+```
+
+<li>At the same directory location, open a new terminal and run npm install to get all javascript library that we need to run this project</li>
+
+```bash
+npm install
+```
+
+<li>After install, at the same terminal run npm run dev to start</li>
+
+```bash
+npm run dev
+```
+
+<li>Open the localhost <a>http://localhost:8000</a></li>
+    
+</ol>
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
