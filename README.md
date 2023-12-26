@@ -33,9 +33,23 @@ npm install
 npm run dev
 ```
 
-<li>Open the localhost <a>http://localhost:8000</a></li>
-    
+<li>Open the localhost <a href='http://localhost:8000'>http://localhost:8000</a></li>
 </ol>
+
+## Tech Stack 📐
+<ul>
+    <li>PHP (^8.2.0)</li>
+    <li>Laravel (^10.10)</li>
+    <li>Inertiajs (^0.6.3)</li>
+    <li>Vite (^4.0.0)</li>
+    <li>React (^18.2.0)</li>
+    <li>Tailwindcss (^3.2.1)</li>
+    <li>Flowbite (^2.2.1)</li>
+    <li>Aos (^2.3.4)</li>
+    <li>Animate.css (^4.1.1)</li>
+    <li>Material-tailwind/react (^2.1.8)</li>
+    <li>React-typed (^1.2.0)</li>
+</ul>
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
