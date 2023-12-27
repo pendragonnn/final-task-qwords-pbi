@@ -142,7 +142,7 @@ export default function Navbar() {
             </li>
 
             {/* server dropdown */}
-            <li className=''>
+            <li>
               <Dropdown label="Server" inline className='border rounded-lg border-dashed border-orange-500 shadow-xl w-[800px]'>
                 <div className='grid grid-cols-2 h-fit w-full p-3'>
                   {serverData.map((dropdownData) => (
@@ -163,7 +163,7 @@ export default function Navbar() {
             </li>
 
             {/* email suite dropdown */}
-            <li className=''>
+            <li>
               <Dropdown label="Email Suite" inline className='border rounded-lg border-dashed border-orange-500 shadow-xl w-[800px]'>
                 <div className='grid grid-cols-2 h-fit w-full p-3'>
                   {emailSuiteData.map((dropdownData) => (
@@ -184,7 +184,7 @@ export default function Navbar() {
             </li>
 
             {/* domain dropdown */}
-            <li className=''>
+            <li>
               <Dropdown label="Domain" inline className='border rounded-lg border-dashed border-orange-500 shadow-xl w-[800px]'>
                 <div className='grid grid-cols-2 h-fit w-full p-3'>
                   {domainData.map((dropdownData) => (
@@ -205,7 +205,7 @@ export default function Navbar() {
             </li>
 
             {/* services dropdown */}
-            <li className=''>
+            <li>
               <Dropdown label="Services" inline className='border rounded-lg border-dashed border-orange-500 shadow-xl w-[800px]'>
                 <div className='grid grid-cols-2 h-fit w-full p-3'>
                   {serviceData.map((dropdownData) => (
@@ -226,7 +226,7 @@ export default function Navbar() {
             </li>
 
             {/* internet access dropdown */}
-            <li className=''>
+            <li>
               <Dropdown label="Internet Access" inline className='border rounded-lg border-dashed border-orange-500 shadow-xl w-[800px]'>
                 <div className='grid grid-cols-2 h-fit w-full p-3'>
                   {internetAccessData.map((dropdownData) => (
@@ -247,7 +247,7 @@ export default function Navbar() {
             </li>
 
             {/* customer care dropdown */}
-            <li className=''>
+            <li>
               <Dropdown label="Customer Care" inline className='border rounded-lg border-dashed border-orange-500 shadow-xl w-[800px]'>
                 <div className='grid grid-cols-2 h-fit w-full p-3'>
                   {customerCareData.map((dropdownData) => (
@@ -267,13 +267,18 @@ export default function Navbar() {
               </Dropdown>
             </li>
 
-            <li className=''>
+            <li>
               <a href="" className='flex items-center gap-1'>
                 <div className='animate__animated animate__tada animate__infinite'>🎁</div>Promo
               </a>
             </li>
           </ul>
-          <button className='p-2 w-fit rounded-full bg-orange-500 text-white hover:bg-white hover:text-orange-500 font-bold text-base hover:border hover:border-orange-500 hover:p-1'>Log in</button>
+
+          {/* button box */}
+          <div className='flex gap-2'>
+            <button className='p-2 border border-orange-500 w-fit rounded-full bg-orange-500 text-white hover:bg-white hover:text-orange-500 font-bold text-base hover:border hover:border-orange-500 '>Log in</button>
+            <button className='p-2 border border-orange-500 w-fit rounded-full bg-orange-500 text-white hover:bg-white hover:text-orange-500 font-bold text-base hover:border hover:border-orange-500 '>Register</button>
+          </div>
         </div>
 
 
@@ -453,7 +458,8 @@ export default function Navbar() {
                 <a href="" className='text-xl flex items-center gap-1 font-bold'>
                   <div className='animate__animated animate__tada animate__infinite'>🎁</div>Promo
                 </a>
-                <button className='p-2 w-fit rounded-full bg-orange-500 text-white hover:bg-white hover:text-orange-500 font-bold text-base hover:border hover:border-orange-500 hover:p-1'>Log in</button>
+                <button className='p-2 w-fit border border-orange-500 rounded-full bg-orange-500 text-white hover:bg-white hover:text-orange-500 font-bold text-base hover:border hover:border-orange-500'>Log in</button>
+                <button className='p-2 w-fit border border-orange-500 rounded-full bg-orange-500 text-white hover:bg-white hover:text-orange-500 font-bold text-base hover:border hover:border-orange-500'>Register</button>
               </li>
             </ul>
           </div>
