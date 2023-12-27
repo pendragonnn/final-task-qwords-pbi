@@ -14,7 +14,7 @@ export default function Service() {
       <TitleDescription title={"Lihat Juga Layanan Kami Yang Lain"}  description={'Optimalkan performa website bisnis Anda dengan berbagai layanan berkualitas dari Qwords'}/>
       
       {/* service card */}
-      <div className='grid grid-cols-1 lg:grid-cols-3 h-fit lg:h-[100vh] md:h-[80vh] my-2 gap-2 lg:p-2 px-4'>
+      <div className='grid grid-cols-1 lg:grid-cols-3 h-fit lg:h-[100vh] my-2 gap-2 lg:p-2 px-4'>
         <div data-aos="fade-right" data-aos-delay="500" className='flex md:justify-center items-start'>
           {/* card 1 */}
           <ServiceCard serviceData={serviceData[0]} />
