@@ -23,10 +23,10 @@ git clone https://github.com/pendragonnn/final-task-qwords-pbi.git
 composer install
 ```
 
-<li>Run php artisan serve to start the laravel</li>
+<li>Generate your application encryption using php artisan key:generate</li>
 
 ```bash
-php artisan serve --port=8000
+php artisan key:generate
 ```
 
 <li>At the same directory location, open a new terminal and run npm install to get all javascript library that we need to run this project</li>
@@ -35,13 +35,20 @@ php artisan serve --port=8000
 npm install
 ```
 
-<li>After install, at the same terminal run npm run dev to start</li>
+<li>Run php artisan serve to start the laravel</li>
+
+```bash
+php artisan serve --port=8000
+```
+
+<li>Run npm run dev to start</li>
 
 ```bash
 npm run dev
 ```
 
 <li>Open the localhost <a href='http://localhost:8000'>http://localhost:8000</a></li>
+
 </ol>
 
 ## Tech Stack 📐
